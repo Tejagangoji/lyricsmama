@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import { Layout } from '@/src/components/layout';
 import { ThemeProvider } from '@/src/components/Themecontext';
+import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
   return (
