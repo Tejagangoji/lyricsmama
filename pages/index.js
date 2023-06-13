@@ -23,7 +23,7 @@ export default function Home({ allsongs }) {
               <h2 className="homeheads latesthead">Famous Songs</h2>
               <div className="songs">{famoussongs.map(song => {
                 return (
-                  <Link key={song.id} className='songlinks' href={`http://localhost:3000/song/${song.title}`}>
+                  <Link key={song.id} className='songlinks' href={`https://lyricsmama.netlify.app/song/${song.title}`}>
                     <div className="songtitle">
                       <div className="songimage"><img className='songimg' src={song.img} alt={song.title} /></div>
                       <div className="songtitle">{song.title} Song Lyrics - {song.movie} Movie</div>
@@ -37,7 +37,7 @@ export default function Home({ allsongs }) {
               <h2 className="homeheads famoushead">Latest Songs</h2>
               <div className="songs">{allsongs.map(song => {
                 return (
-                  <Link key={song.id} className='songlinks' href={`http://localhost:3000/song/${song.title}`}>
+                  <Link key={song.id} className='songlinks' href={`https://lyricsmama.netlify.app/song/${song.title}`}>
                     <div className="songtitle">
                       <div className="songimage"><img className='songimg' src={song.img} alt={song.title} /></div>
                       <div className="songtitle">{song.title} Song Lyrics - {song.movie} Movie</div>
