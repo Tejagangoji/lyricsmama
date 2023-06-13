@@ -66,7 +66,7 @@ export const Header = () => {
             <div ref={keywords} className="searchkeywords">
                 {searchvalue.map(ser => {
                     return (
-                        <Link onClick={closesearch} href={`http://localhost:3000/song/${ser.title}`} className="singlealbum">
+                        <Link onClick={closesearch} href={`https://lyricsmama.netlify.app/song/${ser.title}`} className="singlealbum">
                             {ser.album}
                         </Link>
                     )
